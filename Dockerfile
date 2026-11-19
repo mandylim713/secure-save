@@ -9,10 +9,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && a2enmod rewrite headers \
     && rm -rf /var/lib/apt/lists/*
 
-# --- mod_php requires the prefork MPM only. Debian ships mpm_event enabled, and
-# --- loading two MPMs makes Apache refuse to start (AH00534). This runs after
-# --- every apt layer so no package postinst can re-enable one.
-RUN a2dismod mpm_event mpm_worker 2>/dev/null; a2enmod mpm_prefork
+# --- mod_php requires the prefork MPM only. Ensure conflicting MPMs are purged ---
+RUN rm -f /etc/apache2/mods-enabled/mpm_*.load /etc/apache2/mods-enabled/mpm_*.conf \
+    && a2enmod mpm_prefork
 
 # --- Let the app's .htaccess (front controller) work in the document root ---
 RUN printf '<Directory /var/www/html>\n    Options FollowSymLinks\n    AllowOverride All\n    Require all granted\n</Directory>\n' \
