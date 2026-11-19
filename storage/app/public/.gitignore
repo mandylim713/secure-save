@@ -1,0 +1,6 @@
+*
+!photos/
+!photos/**
+!uploads/
+!uploads/**
+!.gitignore

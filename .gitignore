@@ -20,8 +20,11 @@ Thumbs.db
 /securesa_bnk.sql
 # vendor demo/installer SQL ships a hard-coded Stripe test key pair
 /SQL/
-/storage/app/public/*
-!/storage/app/public/.gitignore
+# Allow storage photos and uploads to be deployed
+!/storage/app/public/photos/
+!/storage/app/public/photos/*
+!/storage/app/public/uploads/
+!/storage/app/public/uploads/*
 /storage/logs/*.log
 /storage/framework/cache/data/*
 /storage/framework/sessions/*
