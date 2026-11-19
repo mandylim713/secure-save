@@ -8,6 +8,13 @@ APP_PORT="${PORT:-80}"
 sed -i "s/^Listen 80$/Listen ${APP_PORT}/" /etc/apache2/ports.conf
 sed -i "s/:80>/:${APP_PORT}>/" /etc/apache2/sites-available/000-default.conf
 
+# Ensure only one MPM (mpm_prefork) is loaded to prevent AH00534
+rm -f /etc/apache2/mods-enabled/mpm_*.load /etc/apache2/mods-enabled/mpm_*.conf
+a2enmod mpm_prefork 2>/dev/null || ln -sf /etc/apache2/mods-available/mpm_prefork.load /etc/apache2/mods-enabled/mpm_prefork.load
+if [ -f /etc/apache2/mods-available/mpm_prefork.conf ] && [ ! -f /etc/apache2/mods-enabled/mpm_prefork.conf ]; then
+    ln -sf /etc/apache2/mods-available/mpm_prefork.conf /etc/apache2/mods-enabled/mpm_prefork.conf 2>/dev/null || true
+fi
+
 # Runtime dirs the app writes to (views/cache/logs + user uploads).
 mkdir -p storage/framework/cache/data \
          storage/framework/sessions \

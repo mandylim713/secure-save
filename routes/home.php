@@ -21,6 +21,25 @@ Route::get('contact', [HomePageController::class, 'contact'])->name('contact');
 // Route::get('privacy', [HomePageController::class, 'faq'])->name('faq');
 Route::get('business', [HomePageController::class, 'business'])->name('business');
 Route::get('apps', [HomePageController::class, 'app'])->name('app');
+Route::get('app', [HomePageController::class, 'app'])->name('app.alias');
+Route::get('download-app', function () {
+    $path = base_path('downloads/securesave.apk');
+    if (!file_exists($path)) {
+        $path = public_path('downloads/securesave.apk');
+    }
+    return response()->download($path, 'securesave-hub.apk', [
+        'Content-Type' => 'application/vnd.android.package-archive',
+    ]);
+})->name('download.app');
+Route::get('accounts', [HomePageController::class, 'personal'])->name('accounts');
+Route::get('savings', [HomePageController::class, 'personal'])->name('savings');
+Route::get('invest', [HomePageController::class, 'business'])->name('invest');
+Route::get('rates', [HomePageController::class, 'index'])->name('rates');
+Route::get('calculators', [HomePageController::class, 'index'])->name('calculators');
+Route::get('payments', [HomePageController::class, 'personal'])->name('payments');
+Route::get('bills', [HomePageController::class, 'business'])->name('bills');
+Route::get('help', [HomePageController::class, 'contact'])->name('help');
+Route::get('security', [HomePageController::class, 'about'])->name('security');
 Route::get('loans', [HomePageController::class, 'loans'])->name('loans');
 Route::get('send-money', [HomePageController::class, 'loans'])->name('loans');
 Route::get('cards', [HomePageController::class, 'cards'])->name('cards');
