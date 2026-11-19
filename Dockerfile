@@ -1,11 +1,11 @@
 # Secure Save Hub - Laravel 8 (root-deployed) on Apache + PHP 8.1
 FROM php:8.1-apache
 
-# --- PHP extensions required by this app (pdo_mysql, gd, zip, bcmath, exif, ...) ---
+# --- PHP extensions required by this app (including GMP for BitPay) ---
 RUN apt-get update && apt-get install -y --no-install-recommends \
-        libzip-dev libpng-dev libjpeg62-turbo-dev libfreetype6-dev libonig-dev unzip git \
+        libzip-dev libpng-dev libjpeg62-turbo-dev libfreetype6-dev libonig-dev libgmp-dev unzip git \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install -j"$(nproc)" pdo_mysql mysqli mbstring zip gd bcmath exif opcache pcntl \
+    && docker-php-ext-install -j"$(nproc)" pdo_mysql mysqli mbstring zip gd bcmath exif gmp opcache pcntl \
     && a2enmod rewrite headers \
     && rm -rf /var/lib/apt/lists/*
 
