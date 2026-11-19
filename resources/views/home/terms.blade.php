@@ -214,7 +214,7 @@ You can use your mobile to perform transactions, loan requests, and credit card 
 <div class="app-btn-wrap">
 <a href="apps">
 <img src="temp/custom/assets/img/about/play-store.png" alt="Image">
-</a><a href="app">
+</a><a href="/apps">
 <img src="temp/custom/assets/img/about/app-store.png" alt="Image">
 </a>
 </div>

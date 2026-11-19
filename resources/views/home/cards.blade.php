@@ -209,9 +209,9 @@
 </div>
 <h5>Over 2 million credit card users</h5>
 <div class="app-btn-wrap">
-<a href="app">
+<a href="/apps">
 <img src="temp/custom/assets/img/about/play-store.png" alt="Image">
-</a><a href="app">
+</a><a href="/apps">
 <img src="temp/custom/assets/img/about/app-store.png" alt="Image">
 </a>
 </div>
