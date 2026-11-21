@@ -45,13 +45,13 @@
                          <div class="col-sm-12">
                             <div class="panel panel-default">
                              <div class="panel-body">
-                               <h4 style=""><img  src="{{ asset(\'temp/custom/images/3527271.png\') }}" width="25px"> &nbsp;LOAN DETAILS</h4>
+                               <h4 style=""><img  src="{{ asset('temp/custom/images/3527271.png') }}" width="25px"> &nbsp;LOAN DETAILS</h4>
                                <hr>
 
                                <div class="row">
 
                                 <div class="col-sm-3" align="center">
-                                 <img  src="{{ asset(\'temp/custom/images/5207009.png\') }}" class="img-responsive" style="margin-top: 15px;" width="50">
+                                 <img  src="{{ asset('temp/custom/images/5207009.png') }}" class="img-responsive" style="margin-top: 15px;" width="50">
                                   <br>
                                   <span style="font-size:14px;">CAR LOAN</span><br><br>
                                   
@@ -60,7 +60,7 @@
 
 
                                 <div class="col-sm-3" align="center">
-                                  <img  src="{{ asset(\'temp/custom/images/4221696.png\') }}" class="img-responsive" style="margin-top: 15px;" width="50">
+                                  <img  src="{{ asset('temp/custom/images/4221696.png') }}" class="img-responsive" style="margin-top: 15px;" width="50">
                                   <br>
                                   <span style="font-size:14px;">HOME LOAN</span><br><br>
                                    
@@ -68,7 +68,7 @@
                                  </div>
 
                                  <div class="col-sm-3" align="center">
-                                   <img  src="{{ asset(\'temp/custom/images/3130571.png\') }}" class="img-responsive" style="margin-top: 15px;" width="50">
+                                   <img  src="{{ asset('temp/custom/images/3130571.png') }}" class="img-responsive" style="margin-top: 15px;" width="50">
                                   <br>
                                   <span style="font-size:14px;">BUSINESS LOAN</span><br><br>
                                    
@@ -76,7 +76,7 @@
                                  </div>
 
                                  <div class="col-sm-3" align="center">
-                                   <img  src="{{ asset(\'temp/custom/images/2780256.png\') }}" class="img-responsive" style="margin-top: 15px;" width="50">
+                                   <img  src="{{ asset('temp/custom/images/2780256.png') }}" class="img-responsive" style="margin-top: 15px;" width="50">
                                   <br>
                                   <span style="font-size:14px;">MEDICAL LOAN</span><br><br>
                                    
@@ -99,7 +99,7 @@
                        <div class="row">
                          <div class="col-sm-2"></div>
                          <div class="col-sm-4">
-                            <img  src="{{ asset(\'temp/custom/images/1907675.png\') }}" class="img-responsive" style="margin-top: 15px;" width="150">
+                            <img  src="{{ asset('temp/custom/images/1907675.png') }}" class="img-responsive" style="margin-top: 15px;" width="150">
                          </div>
                          <div class="col-sm-4">
                           <h3>Apply For Loans</h3>
@@ -194,8 +194,8 @@
 <div class="row gx-5 align-items-center">
 <div class="col-lg-6">
 <div class="app-img-wrap">
-<img src="{{ asset(\'temp/custom/assets/img/shape-4.png\') }}" alt="Image" class="app-shape-one bounce">
-<img src="{{ asset(\'temp/custom/assets/img/app-screen.png\') }}" alt="Image">
+<img src="{{ asset('temp/custom/assets/img/shape-4.png') }}" alt="Image" class="app-shape-one bounce">
+<img src="{{ asset('temp/custom/assets/img/app-screen.png') }}" alt="Image">
 </div>
 </div>
 <div class="col-lg-6">
@@ -208,9 +208,9 @@
 <h5>Over 700K+ approved loans</h5>
 <div class="app-btn-wrap">
 <a href="/apps">
-<img src="{{ asset(\'temp/custom/assets/img/about/play-store.png\') }}" alt="Image">
+<img src="{{ asset('temp/custom/assets/img/about/play-store.png') }}" alt="Image">
 </a><a href="/apps">
-<img src="{{ asset(\'temp/custom/assets/img/about/app-store.png\') }}" alt="Image">
+<img src="{{ asset('temp/custom/assets/img/about/app-store.png') }}" alt="Image">
 </a>
 </div>
 </div>

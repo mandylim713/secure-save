@@ -29,7 +29,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-sm-12">
-			<img  src="{{ asset(\'temp/custom/images/105536.png\') }}" width="150px"><br><br>
+			<img  src="{{ asset('temp/custom/images/105536.png') }}" width="150px"><br><br>
 			<h3>App not available on your current location.</h3>
 		</div>
 	</div>
@@ -121,8 +121,8 @@
 <div class="row gx-5 align-items-center">
 <div class="col-lg-6">
 <div class="app-img-wrap">
-<img  src="{{ asset(\'temp/custom/assets/img/shape-4.png\') }}" alt="Image" class="app-shape-one bounce">
-<img  src="{{ asset(\'temp/custom/assets/img/app-screen.png\') }}" alt="Image">
+<img  src="{{ asset('temp/custom/assets/img/shape-4.png') }}" alt="Image" class="app-shape-one bounce">
+<img  src="{{ asset('temp/custom/assets/img/app-screen.png') }}" alt="Image">
 </div>
 </div>
 <div class="col-lg-6">
@@ -136,9 +136,9 @@ You can use your mobile to perform transactions, loan requests, and credit card 
 <h5>Over 9.2 million Downloads Worldwide</h5>
 <div class="app-btn-wrap">
 <a href="app">
-<img  src="{{ asset(\'temp/custom/assets/img/about/play-store.png\') }}" alt="Image">
+<img  src="{{ asset('temp/custom/assets/img/about/play-store.png') }}" alt="Image">
 </a><a href="app">
-<img  src="{{ asset(\'temp/custom/assets/img/about/app-store.png\') }}" alt="Image">
+<img  src="{{ asset('temp/custom/assets/img/about/app-store.png') }}" alt="Image">
 </a>
 </div>
 </div>

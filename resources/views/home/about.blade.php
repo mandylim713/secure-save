@@ -40,25 +40,25 @@
   </div>
   <div class="partner-slider owl-carousel">
   <div class="partner-item">
-  <img src="{{ asset(\'temp/custom/assets/img/partner/partner-1.png\') }}" alt="Image">
+  <img src="{{ asset('temp/custom/assets/img/partner/partner-1.png') }}" alt="Image">
   </div>
   <div class="partner-item">
-  <img src="{{ asset(\'temp/custom/assets/img/partner/partner-2.png\') }}" alt="Image">
+  <img src="{{ asset('temp/custom/assets/img/partner/partner-2.png') }}" alt="Image">
   </div>
   <div class="partner-item">
-  <img src="{{ asset(\'temp/custom/assets/img/partner/partner-3.png\') }}" alt="Image">
+  <img src="{{ asset('temp/custom/assets/img/partner/partner-3.png') }}" alt="Image">
   </div>
   <div class="partner-item">
-  <img src="{{ asset(\'temp/custom/assets/img/partner/partner-4.png\') }}" alt="Image">
+  <img src="{{ asset('temp/custom/assets/img/partner/partner-4.png') }}" alt="Image">
   </div>
   <div class="partner-item">
-  <img src="{{ asset(\'temp/custom/assets/img/partner/partner-5.png\') }}" alt="Image">
+  <img src="{{ asset('temp/custom/assets/img/partner/partner-5.png') }}" alt="Image">
   </div>
   <div class="partner-item">
-  <img src="{{ asset(\'temp/custom/assets/img/partner/partner-6.png\') }}" alt="Image">
+  <img src="{{ asset('temp/custom/assets/img/partner/partner-6.png') }}" alt="Image">
   </div>
   <div class="partner-item">
-  <img src="{{ asset(\'temp/custom/assets/img/partner/partner-7.png\') }}" alt="Image">
+  <img src="{{ asset('temp/custom/assets/img/partner/partner-7.png') }}" alt="Image">
   </div>
   </div>
   </div>
@@ -71,21 +71,21 @@
   <div class="col-lg-6">
   <div class="row">
   <div class="col-6 about-img-wrap">
-  <img src="{{ asset(\'temp/custom/assets/img/about/about-shape-4.png\') }}" alt="Image" class="about-shape-one bounce">
+  <img src="{{ asset('temp/custom/assets/img/about/about-shape-4.png') }}" alt="Image" class="about-shape-one bounce">
   <div class="about-img">
-  <img src="{{ asset(\'temp/custom/assets/img/about/about-img-1.jpg\') }}" alt="Image">
+  <img src="{{ asset('temp/custom/assets/img/about/about-img-1.jpg') }}" alt="Image">
   </div>
   <div class="about-img">
-  <img src="{{ asset(\'temp/custom/assets/img/about/about-img-2.jpg\') }}" alt="Image">
+  <img src="{{ asset('temp/custom/assets/img/about/about-img-2.jpg') }}" alt="Image">
   </div>
   </div>
   <div class="col-6 about-img-wrap lgm-70">
-  <img src="{{ asset(\'temp/custom/assets/img/shape-1.png\') }}" alt="Image" class="about-shape-two moveHorizontal">
+  <img src="{{ asset('temp/custom/assets/img/shape-1.png') }}" alt="Image" class="about-shape-two moveHorizontal">
   <div class="about-img">
-  <img src="{{ asset(\'temp/custom/assets/img/about/about-img-3.jpg\') }}" alt="Image">
+  <img src="{{ asset('temp/custom/assets/img/about/about-img-3.jpg') }}" alt="Image">
   </div>
   <div class="about-img">
-  <img src="{{ asset(\'temp/custom/assets/img/about/about-img-4.jpg\') }}" alt="Image">
+  <img src="{{ asset('temp/custom/assets/img/about/about-img-4.jpg') }}" alt="Image">
   </div>
   </div>
   </div>
@@ -234,8 +234,8 @@
   </div>
   <div class="col-lg-6 order-lg-2 order-md-1 order-1">
   <div class="wh-img-wrap">
-  <img src="{{ asset(\'temp/custom/assets/img/shape-6.png\') }}" alt="Image" class="wh-shape-one animationFramesTwo">
-  <img src="{{ asset(\'temp/custom/assets/img/why-choose-us/wh-img-7.jpg\') }}" alt="Image">
+  <img src="{{ asset('temp/custom/assets/img/shape-6.png') }}" alt="Image" class="wh-shape-one animationFramesTwo">
+  <img src="{{ asset('temp/custom/assets/img/why-choose-us/wh-img-7.jpg') }}" alt="Image">
   </div>
   </div>
   </div>
@@ -381,8 +381,8 @@
   <div class="row gx-5 align-items-center">
   <div class="col-lg-6">
   <div class="app-img-wrap">
-  <img src="{{ asset(\'temp/custom/assets/img/shape-4.png\') }}" alt="Image" class="app-shape-one bounce">
-  <img src="{{ asset(\'temp/custom/assets/img/app-screen.png\') }}" alt="Image">
+  <img src="{{ asset('temp/custom/assets/img/shape-4.png') }}" alt="Image" class="app-shape-one bounce">
+  <img src="{{ asset('temp/custom/assets/img/app-screen.png') }}" alt="Image">
   </div>
   </div>
   <div class="col-lg-6">
@@ -396,9 +396,9 @@
   <h5>Over 9.2 million Downloads Worldwide</h5>
   <div class="app-btn-wrap">
   <a href="/apps">
-  <img src="{{ asset(\'temp/custom/assets/img/about/play-store.png\') }}" alt="Image">
+  <img src="{{ asset('temp/custom/assets/img/about/play-store.png') }}" alt="Image">
   </a><a href="/apps">
-  <img src="{{ asset(\'temp/custom/assets/img/about/app-store.png\') }}" alt="Image">
+  <img src="{{ asset('temp/custom/assets/img/about/app-store.png') }}" alt="Image">
   </a>
   </div>
   </div>

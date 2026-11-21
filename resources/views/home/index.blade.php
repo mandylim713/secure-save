@@ -6,9 +6,9 @@
 <section class="hero-wrap style2">
     <div class="container">
     <div class="hero-shape" data-speed="0.06" data-revert="true">
-    <img src="{{ asset(\'temp/custom/assets/img/hero/hero-shape-4.png\') }}" alt="Image" class="hero-shape-one">
-    <img src="{{ asset(\'temp/custom/assets/img/hero/hero-shape-5.png\') }}" alt="Image" class="hero-shape-two">
-    <img src="{{ asset(\'temp/custom/assets/img/hero/hero-shape-6.png\') }}" alt="Image" class="hero-shape-three">
+    <img src="{{ asset('temp/custom/assets/img/hero/hero-shape-4.png') }}" alt="Image" class="hero-shape-one">
+    <img src="{{ asset('temp/custom/assets/img/hero/hero-shape-5.png') }}" alt="Image" class="hero-shape-two">
+    <img src="{{ asset('temp/custom/assets/img/hero/hero-shape-6.png') }}" alt="Image" class="hero-shape-three">
     </div>
     <div class="row align-items-center gx-5">
     <div class="col-lg-6">
@@ -28,13 +28,13 @@
     <div class="hero-contact" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
     <div class="hero-contact-img">
     <a href="/contact">
-    <img src="{{ asset(\'temp/custom/assets/img/testimonials/client-1.jpg\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/testimonials/client-1.jpg') }}" alt="Image">
     </a>
     <a href="/contact">
-    <img src="{{ asset(\'temp/custom/assets/img/testimonials/client-2.jpg\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/testimonials/client-2.jpg') }}" alt="Image">
     </a>
     <a href="/contact">
-    <img src="{{ asset(\'temp/custom/assets/img/testimonials/client-3.jpg\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/testimonials/client-3.jpg') }}" alt="Image">
     </a>
     </div>
     <div class="hero-contact-text">
@@ -50,10 +50,10 @@
     <h6>18.5M+ <span>Active Users</span></h6>
     </div>
     <div class="hero-img-one">
-    <img src="{{ asset(\'temp/custom/assets/img/hero/hero-img-2.jpg\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/hero/hero-img-2.jpg') }}" alt="Image">
     </div>
     <div class="hero-img-two">
-    <img src="{{ asset(\'temp/custom/assets/img/hero/hero-img-3.jpg\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/hero/hero-img-3.jpg') }}" alt="Image">
     </div>
     </div>
     </div>
@@ -66,22 +66,22 @@
     <div class="container">
     <div class="partner-slider owl-carousel">
     <div class="partner-item">
-    <img src="{{ asset(\'temp/custom/assets/img/partner/partner-1.png\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/partner/partner-1.png') }}" alt="Image">
     </div>
     <div class="partner-item">
-    <img src="{{ asset(\'temp/custom/assets/img/partner/partner-2.png\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/partner/partner-2.png') }}" alt="Image">
     </div>
     <div class="partner-item">
-    <img src="{{ asset(\'temp/custom/assets/img/partner/partner-3.png\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/partner/partner-3.png') }}" alt="Image">
     </div>
     <div class="partner-item">
-    <img src="{{ asset(\'temp/custom/assets/img/partner/partner-4.png\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/partner/partner-4.png') }}" alt="Image">
     </div>
     <div class="partner-item">
-    <img src="{{ asset(\'temp/custom/assets/img/partner/partner-5.png\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/partner/partner-5.png') }}" alt="Image">
     </div>
     <div class="partner-item">
-    <img src="{{ asset(\'temp/custom/assets/img/partner/partner-6.png\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/partner/partner-6.png') }}" alt="Image">
     </div>
     </div>
     </div>
@@ -93,12 +93,12 @@
     <div class="row gx-5 align-items-center">
     <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
     <div class="about-img-wrap">
-    <img src="{{ asset(\'temp/custom/assets/img/shape-1.png\') }}" alt="Image" class="about-shape-one">
+    <img src="{{ asset('temp/custom/assets/img/shape-1.png') }}" alt="Image" class="about-shape-one">
     <div class="about-img-one">
-    <img src="{{ asset(\'temp/custom/assets/img/about/about-img-5.jpg\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/about/about-img-5.jpg') }}" alt="Image">
     </div>
     <div class="about-img-two">
-    <img src="{{ asset(\'temp/custom/assets/img/about/about-img-6.jpg\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/about/about-img-6.jpg') }}" alt="Image">
     </div>
     </div>
     </div>
@@ -237,18 +237,18 @@
     <div class="col-lg-6 order-lg-2 order-md-1 order-1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
     <div class="row align-items-end">
     <div class="col-6 wh-img-wrap">
-    <img src="{{ asset(\'temp/custom/assets/img/shape-2.png\') }}" alt="Image" class="wh-shape-one moveHorizontal">
+    <img src="{{ asset('temp/custom/assets/img/shape-2.png') }}" alt="Image" class="wh-shape-one moveHorizontal">
     <div class="wh-img">
-    <img src="{{ asset(\'temp/custom/assets/img/why-choose-us/wh-img-4.jpg\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/why-choose-us/wh-img-4.jpg') }}" alt="Image">
     </div>
     <div class="wh-img">
-    <img src="{{ asset(\'temp/custom/assets/img/why-choose-us/wh-img-5.jpg\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/why-choose-us/wh-img-5.jpg') }}" alt="Image">
     </div>
     </div>
     <div class="col-6 wh-img-wrap">
     <div class="wh-img">
-    <img src="{{ asset(\'temp/custom/assets/img/shape-3.png\') }}" alt="Image" class="wh-shape-two bounce">
-    <img src="{{ asset(\'temp/custom/assets/img/why-choose-us/wh-img-6.jpg\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/shape-3.png') }}" alt="Image" class="wh-shape-two bounce">
+    <img src="{{ asset('temp/custom/assets/img/why-choose-us/wh-img-6.jpg') }}" alt="Image">
     </div>
     </div>
     </div>
@@ -289,7 +289,7 @@
     <tr>
     <td>
     <div class="country-flag">
-    <img src="{{ asset(\'temp/custom/assets/img/flag/usa.png\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/flag/usa.png') }}" alt="Image">
     US Dollar
     </div>
     </td>
@@ -300,7 +300,7 @@
     <span class="text-green">+0.50%</span>
     </td>
     <td>
-    <img src="{{ asset(\'temp/custom/assets/img/chart-img/chart-1.png\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/chart-img/chart-1.png') }}" alt="Image">
     </td>
     <td>
     <button class="btn style1" type="button"><i class="ri-send-plane-line"></i>Send</button>
@@ -309,7 +309,7 @@
     <tr>
     <td>
     <div class="country-flag">
-    <img src="{{ asset(\'temp/custom/assets/img/flag/japan.png\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/flag/japan.png') }}" alt="Image">
     Japanees Yen
     </div>
     </td>
@@ -320,7 +320,7 @@
     <span class="text-green">+0.24%</span>
     </td>
     <td>
-    <img src="{{ asset(\'temp/custom/assets/img/chart-img/chart-2.png\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/chart-img/chart-2.png') }}" alt="Image">
     </td>
     <td>
     <button class="btn style1" type="button"><i class="ri-send-plane-line"></i>Send</button>
@@ -329,7 +329,7 @@
     <tr>
     <td>
     <div class="country-flag">
-    <img src="{{ asset(\'temp/custom/assets/img/flag/uk.png\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/flag/uk.png') }}" alt="Image">
     British Pound
     </div>
     </td>
@@ -340,7 +340,7 @@
     <span class="text-red">-0.30%</span>
     </td>
     <td>
-    <img src="{{ asset(\'temp/custom/assets/img/chart-img/chart-3.png\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/chart-img/chart-3.png') }}" alt="Image">
     </td>
     <td>
     <button class="btn style1" type="button"><i class="ri-send-plane-line"></i>Send</button>
@@ -349,7 +349,7 @@
     <tr>
     <td>
     <div class="country-flag">
-    <img src="{{ asset(\'temp/custom/assets/img/flag/newzland.png\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/flag/newzland.png') }}" alt="Image">
     Newzland Dollar
     </div>
     </td>
@@ -360,7 +360,7 @@
     <span class="text-red">-0.063%</span>
     </td>
     <td>
-    <img src="{{ asset(\'temp/custom/assets/img/chart-img/chart-4.png\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/chart-img/chart-4.png') }}" alt="Image">
     </td>
     <td>
     <button class="btn style1" type="button"><i class="ri-send-plane-line"></i>Send</button>
@@ -369,7 +369,7 @@
     <tr>
     <td>
     <div class="country-flag">
-    <img src="{{ asset(\'temp/custom/assets/img/flag/canada.png\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/flag/canada.png') }}" alt="Image">
     Canadian Dollar
     </div>
     </td>
@@ -380,7 +380,7 @@
     <span class="text-red">-0.76%</span>
     </td>
     <td>
-    <img src="{{ asset(\'temp/custom/assets/img/chart-img/chart-5.png\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/chart-img/chart-5.png') }}" alt="Image">
     </td>
     <td>
     <button class="btn style1" type="button"><i class="ri-send-plane-line"></i>Send</button>
@@ -389,7 +389,7 @@
     <tr>
     <td>
     <div class="country-flag">
-    <img src="{{ asset(\'temp/custom/assets/img/flag/france.png\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/flag/france.png') }}" alt="Image">
     Swiss Franc
     </div>
     </td>
@@ -400,7 +400,7 @@
     <span class="text-green">+0.26%</span>
     </td>
     <td>
-    <img src="{{ asset(\'temp/custom/assets/img/chart-img/chart-6.png\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/chart-img/chart-6.png') }}" alt="Image">
     </td>
     <td>
     <button class="btn style1" type="button"><i class="ri-send-plane-line"></i>Send</button>
@@ -519,7 +519,7 @@
     <div class="row justify-content-center">
     <div class="col-xl-4 col-lg-6 col-md-6">
     <div class="currency-card">
-    <div class="currency-flag"><img src="{{ asset(\'temp/custom/assets/img/flag/usa.png\') }}" alt="Image"></div>
+    <div class="currency-flag"><img src="{{ asset('temp/custom/assets/img/flag/usa.png') }}" alt="Image"></div>
     <div class="currency-info">
     <h3>USD - US Dollar</h3>
     <p></p>
@@ -528,7 +528,7 @@
     </div>
     <div class="col-xl-4 col-lg-6 col-md-6">
     <div class="currency-card">
-    <div class="currency-flag"><img src="{{ asset(\'temp/custom/assets/img/flag/eu.png\') }}" alt="Image"></div>
+    <div class="currency-flag"><img src="{{ asset('temp/custom/assets/img/flag/eu.png') }}" alt="Image"></div>
     <div class="currency-info">
     <h3>EUR - Euro</h3>
     <p></p>
@@ -537,7 +537,7 @@
     </div>
     <div class="col-xl-4 col-lg-6 col-md-6">
     <div class="currency-card">
-    <div class="currency-flag"><img src="{{ asset(\'temp/custom/assets/img/flag/uk.png\') }}" alt="Image"></div>
+    <div class="currency-flag"><img src="{{ asset('temp/custom/assets/img/flag/uk.png') }}" alt="Image"></div>
     <div class="currency-info">
     <h3>GBP - British Pound</h3>
     <p></p>
@@ -546,7 +546,7 @@
     </div>
     <div class="col-xl-4 col-lg-6 col-md-6">
     <div class="currency-card">
-    <div class="currency-flag"><img src="{{ asset(\'temp/custom/assets/img/flag/canada.png\') }}" alt="Image"></div>
+    <div class="currency-flag"><img src="{{ asset('temp/custom/assets/img/flag/canada.png') }}" alt="Image"></div>
     <div class="currency-info">
     <h3>CAD - Canadian Dollar</h3>
     <p></p>
@@ -555,7 +555,7 @@
     </div>
     <div class="col-xl-4 col-lg-6 col-md-6">
     <div class="currency-card">
-    <div class="currency-flag"><img src="{{ asset(\'temp/custom/images/197582.png\') }}" alt="Image"></div>
+    <div class="currency-flag"><img src="{{ asset('temp/custom/images/197582.png') }}" alt="Image"></div>
     <div class="currency-info">
     <h3>KRW - South Korean won</h3>
     <p></p>
@@ -564,7 +564,7 @@
     </div>
     <div class="col-xl-4 col-lg-6 col-md-6">
     <div class="currency-card">
-    <div class="currency-flag"><img src="{{ asset(\'temp/custom/assets/img/flag/japan.png\') }}" alt="Image"></div>
+    <div class="currency-flag"><img src="{{ asset('temp/custom/assets/img/flag/japan.png') }}" alt="Image"></div>
     <div class="currency-info">
     <h3>JPY - Japaneese Yen</h3>
     <p></p>
@@ -573,7 +573,7 @@
     </div>
     <div class="col-xl-4 col-lg-6 col-md-6">
     <div class="currency-card">
-    <div class="currency-flag"><img src="{{ asset(\'temp/custom/images/197375.png\') }}" alt="Image"></div>
+    <div class="currency-flag"><img src="{{ asset('temp/custom/images/197375.png') }}" alt="Image"></div>
     <div class="currency-info">
     <h3>CNY - Chinese Yuan</h3>
     <p></p>
@@ -582,7 +582,7 @@
     </div>
     <div class="col-xl-4 col-lg-6 col-md-6">
     <div class="currency-card">
-    <div class="currency-flag"><img src="{{ asset(\'temp/custom/assets/img/flag/newzland.png\') }}" alt="Image"></div>
+    <div class="currency-flag"><img src="{{ asset('temp/custom/assets/img/flag/newzland.png') }}" alt="Image"></div>
     <div class="currency-info">
     <h3>NZD - NZ Dollar</h3>
     <p></p>
@@ -591,7 +591,7 @@
     </div>
     <div class="col-xl-4 col-lg-6 col-md-6">
     <div class="currency-card">
-    <div class="currency-flag"><img src="{{ asset(\'temp/custom/assets/img/flag/france.png\') }}" alt="Image"></div>
+    <div class="currency-flag"><img src="{{ asset('temp/custom/assets/img/flag/france.png') }}" alt="Image"></div>
     <div class="currency-info">
     <h3>CHF - Swiss Franc</h3>
     <p></p>
@@ -618,7 +618,7 @@
     <div class="client-info-area">
     <div class="client-info-wrap">
     <div class="client-img">
-    <img src="{{ asset(\'temp/custom/assets/img/testimonials/client-3.jpg\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/testimonials/client-3.jpg') }}" alt="Image">
     </div>
     <div class="client-info">
     <h3>Jim Morison</h3>
@@ -637,7 +637,7 @@
     <div class="client-info-area">
     <div class="client-info-wrap">
     <div class="client-img">
-    <img src="{{ asset(\'temp/custom/assets/img/testimonials/client-4.jpg\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/testimonials/client-4.jpg') }}" alt="Image">
     </div>
     <div class="client-info">
     <h3>Alex Cruis</h3>
@@ -656,7 +656,7 @@
     <div class="client-info-area">
     <div class="client-info-wrap">
     <div class="client-img">
-     <img src="{{ asset(\'temp/custom/assets/img/testimonials/client-5.jpg\') }}" alt="Image">
+     <img src="{{ asset('temp/custom/assets/img/testimonials/client-5.jpg') }}" alt="Image">
     </div>
     <div class="client-info">
     <h3>Tom Haris</h3>
@@ -673,7 +673,7 @@
     <div class="client-info-area">
     <div class="client-info-wrap">
     <div class="client-img">
-    <img src="{{ asset(\'temp/custom/assets/img/testimonials/client-1.jpg\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/testimonials/client-1.jpg') }}" alt="Image">
     </div>
     <div class="client-info">
     <h3>Harry Jackson</h3>
@@ -690,7 +690,7 @@
     <div class="client-info-area">
     <div class="client-info-wrap">
     <div class="client-img">
-    <img src="{{ asset(\'temp/custom/assets/img/testimonials/client-2.jpg\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/testimonials/client-2.jpg') }}" alt="Image">
     </div>
     <div class="client-info">
     <h3>Chris Haris</h3>
@@ -722,7 +722,7 @@
     <div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
     <div class="blog-card style2">
     <div class="blog-img">
-    <img src="{{ asset(\'temp/custom/assets/img/blog/blog-1.jpg\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/blog/blog-1.jpg') }}" alt="Image">
     <a href="#" class="blog-cat">Corporate</a>
     </div>
     <div class="blog-info">
@@ -737,7 +737,7 @@
     <div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
     <div class="blog-card style2">
     <div class="blog-img">
-    <img src="{{ asset(\'temp/custom/assets/img/blog/blog-2.jpg\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/blog/blog-2.jpg') }}" alt="Image">
     <a href="#" class="blog-cat">Consumer</a>
     </div>
     <div class="blog-info">
@@ -752,7 +752,7 @@
     <div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
     <div class="blog-card style2">
     <div class="blog-img">
-    <img src="{{ asset(\'temp/custom/assets/img/blog/blog-3.jpg\') }}" alt="Image">
+    <img src="{{ asset('temp/custom/assets/img/blog/blog-3.jpg') }}" alt="Image">
     <a href="#" class="blog-cat">Finance</a>
     </div>
     <div class="blog-info">

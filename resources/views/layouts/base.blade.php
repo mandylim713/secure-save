@@ -27,16 +27,16 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js%401.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap%404.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="{{ asset(\'temp/custom/assets/css/bootstrap.min.css\') }}">
-<link rel="stylesheet" href="{{ asset(\'temp/custom/assets/css/flaticon.css\') }}">
-<link rel="stylesheet" href="{{ asset(\'temp/custom/assets/css/remixicon.css\') }}">
-<link rel="stylesheet" href="{{ asset(\'temp/custom/assets/css/owl.carousel.min.css\') }}">
-<link rel="stylesheet" href="{{ asset(\'temp/custom/assets/css/odometer.min.css\') }}">
-<link rel="stylesheet" href="{{ asset(\'temp/custom/assets/css/fancybox.css\') }}">
-<link rel="stylesheet" href="{{ asset(\'temp/custom/assets/css/aos.css\') }}">
-<link rel="stylesheet" href="{{ asset(\'temp/custom/assets/css/style.css\') }}">
-<link rel="stylesheet" href="{{ asset(\'temp/custom/assets/css/responsive.css\') }}">
-<link rel="stylesheet" href="{{ asset(\'temp/custom/assets/css/dark-theme.css\') }}">
+<link rel="stylesheet" href="{{ asset('temp/custom/assets/css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ asset('temp/custom/assets/css/flaticon.css') }}">
+<link rel="stylesheet" href="{{ asset('temp/custom/assets/css/remixicon.css') }}">
+<link rel="stylesheet" href="{{ asset('temp/custom/assets/css/owl.carousel.min.css') }}">
+<link rel="stylesheet" href="{{ asset('temp/custom/assets/css/odometer.min.css') }}">
+<link rel="stylesheet" href="{{ asset('temp/custom/assets/css/fancybox.css') }}">
+<link rel="stylesheet" href="{{ asset('temp/custom/assets/css/aos.css') }}">
+<link rel="stylesheet" href="{{ asset('temp/custom/assets/css/style.css') }}">
+<link rel="stylesheet" href="{{ asset('temp/custom/assets/css/responsive.css') }}">
+<link rel="stylesheet" href="{{ asset('temp/custom/assets/css/dark-theme.css') }}">
 <title>{{$settings->site_name}} - Dedicated to innovating, simplifying, and humanizing digital banking.</title>
 <link rel="icon" type="image/png" href="{{ asset('storage/app/public/'.$settings->favicon)}}">
 </head>
@@ -339,18 +339,18 @@ Loans
   <a href="javascript:void(0)" class="back-to-top bounce"><i class="ri-arrow-up-s-line"></i></a>
   
   
-  <script src="{{ asset(\'temp/custom/assets/js/jquery.min.js\') }}"></script>
-  <script src="{{ asset(\'temp/custom/assets/js/bootstrap.bundle.min.js\') }}"></script>
-  <script src="{{ asset(\'temp/custom/assets/js/form-validator.min.js\') }}"></script>
-  <script src="{{ asset(\'temp/custom/assets/js/contact-form-script.js\') }}"></script>
-  <script src="{{ asset(\'temp/custom/assets/js/aos.js\') }}"></script>
-  <script src="{{ asset(\'temp/custom/assets/js/owl.carousel.min.js\') }}"></script>
-  <script src="{{ asset(\'temp/custom/assets/js/odometer.min.js\') }}"></script>
-  <script src="{{ asset(\'temp/custom/assets/js/jquery.countdown.min.js\') }}"></script>
-  <script src="{{ asset(\'temp/custom/assets/js/fancybox.js\') }}"></script>
-  <script src="{{ asset(\'temp/custom/assets/js/jquery.appear.js\') }}"></script>
-  <script src="{{ asset(\'temp/custom/assets/js/tweenmax.min.js\') }}"></script>
-  <script src="{{ asset(\'temp/custom/assets/js/main.js\') }}"></script>
+  <script src="{{ asset('temp/custom/assets/js/jquery.min.js') }}"></script>
+  <script src="{{ asset('temp/custom/assets/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('temp/custom/assets/js/form-validator.min.js') }}"></script>
+  <script src="{{ asset('temp/custom/assets/js/contact-form-script.js') }}"></script>
+  <script src="{{ asset('temp/custom/assets/js/aos.js') }}"></script>
+  <script src="{{ asset('temp/custom/assets/js/owl.carousel.min.js') }}"></script>
+  <script src="{{ asset('temp/custom/assets/js/odometer.min.js') }}"></script>
+  <script src="{{ asset('temp/custom/assets/js/jquery.countdown.min.js') }}"></script>
+  <script src="{{ asset('temp/custom/assets/js/fancybox.js') }}"></script>
+  <script src="{{ asset('temp/custom/assets/js/jquery.appear.js') }}"></script>
+  <script src="{{ asset('temp/custom/assets/js/tweenmax.min.js') }}"></script>
+  <script src="{{ asset('temp/custom/assets/js/main.js') }}"></script>
   <script type="text/javascript">
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
