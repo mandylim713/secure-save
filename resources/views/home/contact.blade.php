@@ -158,7 +158,7 @@ I agree to the <a class="link style1" href="terms">Terms &amp; Conditions</a> an
 </div>
 <div class="col-lg-5">
 <div class="comp-map">
-<img  src="temp/custom/images/support.gif" width="100%">
+<img  src="{{ asset(\'temp/custom/images/support.gif\') }}" width="100%">
 </div>
 </div>
 </div>

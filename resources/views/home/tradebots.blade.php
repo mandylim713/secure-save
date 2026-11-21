@@ -582,7 +582,7 @@ transition: 0.6s;
     <h1>Bot Trading</h1>
     
     <div class="d-flex">
-      <a href="register" class="btn-get-started scrollto">Get Started</a>
+      <a href="/register" class="btn-get-started scrollto">Get Started</a>
      
     </div>
   </div>
@@ -651,7 +651,7 @@ transition: 0.6s;
                     <ul class="list-inline list-inline-dotted mb-0">
                      <li class="list-inline-item">APY <a href="#" data-abc="true">16,547%</a></li>
                     </ul><br>
-                    <a href="register" class="btn btn-outline-primary">
+                    <a href="/register" class="btn btn-outline-primary">
                           Trade
                       </a>
                   </div>
@@ -670,7 +670,7 @@ transition: 0.6s;
                     <ul class="list-inline list-inline-dotted mb-0">
                      <li class="list-inline-item">APY <a href="#" data-abc="true">4,282%</a></li>
                     </ul><br>
-                    <a href="register" class="btn btn-outline-primary">
+                    <a href="/register" class="btn btn-outline-primary">
                           Trade
                       </a>
                   </div>
@@ -689,7 +689,7 @@ transition: 0.6s;
                     <ul class="list-inline list-inline-dotted mb-0">
                      <li class="list-inline-item">APY <a href="#" data-abc="true">1,900%</a></li>
                     </ul><br>
-                    <a href="register" class="btn btn-outline-primary">
+                    <a href="/register" class="btn btn-outline-primary">
                           Trade
                       </a>
                   </div>
@@ -708,7 +708,7 @@ transition: 0.6s;
                     <ul class="list-inline list-inline-dotted mb-0">
                      <li class="list-inline-item">APY <a href="#" data-abc="true">7,110%</a></li>
                     </ul><br>
-                    <a href="register" class="btn btn-outline-primary">
+                    <a href="/register" class="btn btn-outline-primary">
                           Trade
                       </a>
                   </div>
@@ -727,7 +727,7 @@ transition: 0.6s;
                     <ul class="list-inline list-inline-dotted mb-0">
                      <li class="list-inline-item">APY <a href="#" data-abc="true">3,420%</a></li>
                     </ul><br>
-                    <a href="register" class="btn btn-outline-primary">
+                    <a href="/register" class="btn btn-outline-primary">
                           Trade
                       </a>
                   </div>
@@ -746,7 +746,7 @@ transition: 0.6s;
                     <ul class="list-inline list-inline-dotted mb-0">
                      <li class="list-inline-item">APY <a href="#" data-abc="true">2,560%</a></li>
                     </ul><br>
-                    <a href="register" class="btn btn-outline-primary">
+                    <a href="/register" class="btn btn-outline-primary">
                           Trade
                       </a>
                   </div>

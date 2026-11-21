@@ -45,13 +45,13 @@
                          <div class="col-sm-12">
                             <div class="panel panel-default">
                              <div class="panel-body">
-                               <h4 style=""><img src="temp/custom/images/3527271.png" width="25px"> &nbsp;CARD DETAILS</h4>
+                               <h4 style=""><img src="{{ asset(\'temp/custom/images/3527271.png\') }}" width="25px"> &nbsp;CARD DETAILS</h4>
                                <hr>
 
                                <div class="row">
 
                                 <div class="col-sm-3" align="center">
-                                 <img src="temp/custom/images/349221.png" class="img-responsive" style="margin-top: 15px;" width="50">
+                                 <img src="{{ asset(\'temp/custom/images/349221.png\') }}" class="img-responsive" style="margin-top: 15px;" width="50">
                                   <br>
                                   <span style="font-size:14px;">VISA</span><br><br>
                                   
@@ -60,7 +60,7 @@
 
 
                                 <div class="col-sm-3" align="center">
-                                  <img src="temp/custom/images/147258.png" class="img-responsive" style="margin-top: 15px;" width="50">
+                                  <img src="{{ asset(\'temp/custom/images/147258.png\') }}" class="img-responsive" style="margin-top: 15px;" width="50">
                                   <br>
                                   
                                   <span style="font-size:14px;">MAESTRO</span><br><br>
@@ -69,7 +69,7 @@
                                  </div>
 
                                  <div class="col-sm-3" align="center">
-                                   <img src="temp/custom/images/349228.png" class="img-responsive" style="margin-top: 15px;" width="50">
+                                   <img src="{{ asset(\'temp/custom/images/349228.png\') }}" class="img-responsive" style="margin-top: 15px;" width="50">
                                   <br>
                                  
                                   <span style="font-size:14px;">AMEX</span><br><br>
@@ -78,7 +78,7 @@
                                  </div>
 
                                  <div class="col-sm-3" align="center">
-                                   <img src="temp/custom/images/349230.png" class="img-responsive" style="margin-top: 15px;" width="50">
+                                   <img src="{{ asset(\'temp/custom/images/349230.png\') }}" class="img-responsive" style="margin-top: 15px;" width="50">
                                   <br>
                                   <span style="font-size:14px;">DISCOVER</span><br><br>
                                    
@@ -101,13 +101,13 @@
                        <div class="row">
                          <div class="col-sm-2"></div>
                          <div class="col-sm-4">
-                            <img src="temp/custom/images/1086741.png" class="img-responsive" style="margin-top: 15px;" width="150">
+                            <img src="{{ asset(\'temp/custom/images/1086741.png\') }}" class="img-responsive" style="margin-top: 15px;" width="150">
                          </div>
                          <div class="col-sm-4">
                          	<h3>Apply For Credit Cards</h3>
                          	<p>Welcome to {{$settings->site_name}}, Apply For Credit Cards to be delivered to your doorstep today.</p>
                          	<br>
-                         	<a href="login" target="_blank" class="btn btn-primary">Apply</a>
+                         	<a href="/login" target="_blank" class="btn btn-primary">Apply</a>
                          </div>
                          <div class="col-sm-2"></div>
                        </div>
@@ -159,7 +159,7 @@
 <span>
 <i class="ri-slack-line"></i>
 </span>
-<h3><a href="register">Slack</a></h3>
+<h3><a href="/register">Slack</a></h3>
 </div>
 <p></p>
 </div>
@@ -170,7 +170,7 @@
 <span>
 <i class="ri-google-fill"></i>
 </span>
-<h3><a href="register">Google Assistant</a></h3>
+<h3><a href="/register">Google Assistant</a></h3>
 </div>
 <p></p>
 </div>
@@ -181,7 +181,7 @@
 <span>
 <i class="ri-facebook-fill"></i>
 </span>
-<h3><a href="register">Facebook</a></h3>
+<h3><a href="/register">Facebook</a></h3>
 </div>
 <p></p>
 </div>
@@ -196,8 +196,8 @@
 <div class="row gx-5 align-items-center">
 <div class="col-lg-6">
 <div class="app-img-wrap">
-<img src="temp/custom/assets/img/shape-4.png" alt="Image" class="app-shape-one bounce">
-<img src="temp/custom/assets/img/app-screen.png" alt="Image">
+<img src="{{ asset(\'temp/custom/assets/img/shape-4.png\') }}" alt="Image" class="app-shape-one bounce">
+<img src="{{ asset(\'temp/custom/assets/img/app-screen.png\') }}" alt="Image">
 </div>
 </div>
 <div class="col-lg-6">
@@ -210,9 +210,9 @@
 <h5>Over 2 million credit card users</h5>
 <div class="app-btn-wrap">
 <a href="/apps">
-<img src="temp/custom/assets/img/about/play-store.png" alt="Image">
+<img src="{{ asset(\'temp/custom/assets/img/about/play-store.png\') }}" alt="Image">
 </a><a href="/apps">
-<img src="temp/custom/assets/img/about/app-store.png" alt="Image">
+<img src="{{ asset(\'temp/custom/assets/img/about/app-store.png\') }}" alt="Image">
 </a>
 </div>
 </div>

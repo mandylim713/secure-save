@@ -25,7 +25,7 @@
                     <div class="accordion__category-item" data-accordion="trigger">
                       <div class="accordion__icon"> 
                         <svg class="svg-icon">
-                          <use href="temp/custom/assets/icons/sprite.svg#icon-triangles"></use>
+                          <use href="{{ asset(\'temp/custom/assets/icons/sprite.svg#icon-triangles\') }}"></use>
                         </svg>
                       </div>
                       <div class="accordion__item-content">
@@ -63,7 +63,7 @@
                     <div class="accordion__category-item" data-accordion="trigger">
                       <div class="accordion__icon"> 
                         <svg class="svg-icon">
-                          <use href="temp/custom/assets/icons/sprite.svg#icon-coins"></use>
+                          <use href="{{ asset(\'temp/custom/assets/icons/sprite.svg#icon-coins\') }}"></use>
                         </svg>
                       </div>
                       <div class="accordion__item-content">
@@ -149,7 +149,7 @@ After depositing, watch your capital grow by accumulating daily profit in real t
                     <div class="accordion__category-item" data-accordion="trigger">
                       <div class="accordion__icon"> 
                         <svg class="svg-icon">
-                          <use href="temp/custom/assets/icons/sprite.svg#icon-percent"></use>
+                          <use href="{{ asset(\'temp/custom/assets/icons/sprite.svg#icon-percent\') }}"></use>
                         </svg>
                       </div>
                       <div class="accordion__item-content">
@@ -217,7 +217,7 @@ Maximum Amount: <b>75000</b> usd, <b>1.5</b> btc, <b>20</b> eth, <b>300</b> ltc,
                     <div class="accordion__category-item" data-accordion="trigger">
                       <div class="accordion__icon"> 
                         <svg class="svg-icon">
-                          <use href="temp/custom/assets/icons/sprite.svg#icon-shield"></use>
+                          <use href="{{ asset(\'temp/custom/assets/icons/sprite.svg#icon-shield\') }}"></use>
                         </svg>
                       </div>
                       <div class="accordion__item-content">
@@ -284,7 +284,7 @@ After you have made sure that the entered data is correct, you need to go to the
                     <div class="accordion__category-item" data-accordion="trigger">
                       <div class="accordion__icon"> 
                         <svg class="svg-icon">
-                          <use href="temp/custom/assets/icons/sprite.svg#icon-question"></use>
+                          <use href="{{ asset(\'temp/custom/assets/icons/sprite.svg#icon-question\') }}"></use>
                         </svg>
                       </div>
                       <div class="accordion__item-content">
@@ -329,7 +329,7 @@ After you have made sure that the entered data is correct, you need to go to the
                     <div class="accordion__category-item" data-accordion="trigger">
                       <div class="accordion__icon"> 
                         <svg class="svg-icon">
-                          <use href="temp/custom/assets/icons/sprite.svg#icon-settings"></use>
+                          <use href="{{ asset(\'temp/custom/assets/icons/sprite.svg#icon-settings\') }}"></use>
                         </svg>
                       </div>
                       <div class="accordion__item-content">

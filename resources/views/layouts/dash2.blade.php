@@ -101,14 +101,14 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     
     <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@0.263.1"></script>
     
     <!-- Custom Fonts -->
     <style>
         @font-face {
             font-family: Graphik;
             font-weight: 400;
-            src: url("{{ asset('dash2/konanauth/public/public/asset/fonts/Graphik/GraphikRegular.otf') }}");
+            src: url("{{ asset('dash2/konanauth/public/asset/fonts/Graphik/GraphikRegular.otf') }}");
         }
         @font-face {
             font-family: Graphik;
@@ -123,7 +123,7 @@
         @font-face {
             font-family: Graphik;
             font-weight: 800;
-            src: url("{{ asset('dash2/konanauth/public/asset/fonts/Graphik/GraphikBold.otf ') }}");
+            src: url("{{ asset('dash2/konanauth/public/asset/fonts/Graphik/GraphikBold.otf') }}");
         }
         @font-face {
             font-family: Graphik;

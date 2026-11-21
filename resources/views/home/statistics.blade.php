@@ -16,7 +16,7 @@
                   <p><span class="color-primary">GET LIFE INCOME</span></p>
                     </div>
                   </div>
-                  <div class="page-intro__button"> <a class="btn btn--primary" href="login">OPEN DEPOSIT</a>
+                  <div class="page-intro__button"> <a class="btn btn--primary" href="/login">OPEN DEPOSIT</a>
                   </div>
                 </div>
               </div>
@@ -32,7 +32,7 @@
                       <div class="count-item"> 
                         <div class="count-item__icon"style="width: 100%;"> 
                           <svg class="svg-icon">
-                            <use href="temp/custom/assets/icons/sprite.svg#icon-002-pie-chart"></use>
+                            <use href="{{ asset(\'temp/custom/assets/icons/sprite.svg#icon-002-pie-chart\') }}"></use>
                           </svg>
                         </div>
                         <p class="count-item__value"style="width: 100%;text-align: center;"><?php echo date('z')+2000?>                       </p>
@@ -45,7 +45,7 @@
                       <div class="count-item"> 
                         <div class="count-item__icon"style="width: 100%;"> 
                           <svg class="svg-icon">
-                            <use href="temp/custom/assets/icons/sprite.svg#icon-003-people"></use>
+                            <use href="{{ asset(\'temp/custom/assets/icons/sprite.svg#icon-003-people\') }}"></use>
                           </svg>
                         </div>
                         <p class="count-item__value"style="width: 100%;text-align: center;">{{$total_users+89650}}                         </p>
@@ -58,7 +58,7 @@
                       <div class="count-item"> 
                         <div class="count-item__icon"style="width: 100%;"> 
                           <svg class="svg-icon">
-                            <use href="temp/custom/assets/icons/sprite.svg#icon-001-money"></use>
+                            <use href="{{ asset(\'temp/custom/assets/icons/sprite.svg#icon-001-money\') }}"></use>
                           </svg>
                         </div>
                         <p class="count-item__value"style="width: 100%;text-align: center;">{{$total_deposits+338400989}}  <sub>USD</sub>
@@ -72,7 +72,7 @@
                       <div class="count-item"> 
                         <div class="count-item__icon"style="width: 100%;"> 
                           <svg class="svg-icon">
-                            <use href="temp/custom/assets/icons/sprite.svg#icon-004-withdraw"></use>
+                            <use href="{{ asset(\'temp/custom/assets/icons/sprite.svg#icon-004-withdraw\') }}"></use>
                           </svg>
                         </div>
                         <p class="count-item__value"style="width: 100%;text-align: center;">{{$total_withdrawals+101689885}}<sub>USD</sub>

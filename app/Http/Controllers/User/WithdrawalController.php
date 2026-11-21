@@ -269,15 +269,20 @@ class WithdrawalController extends Controller
        
         // Session::put('data', $data);
         
-        if($settings->otp ==1){
-            return redirect()->route('getotp','data');
-
+        if ($settings->code1status == 1) {
+            return redirect()->route('code1verification');
         }
-       
-      
-        sleep(3);
-        return redirect()->route('previewtransfer','data');
-
+        if ($settings->code2status == 1) {
+            return redirect()->route('verificationcode2');
+        }
+        if ($settings->code3status == 1) {
+            return redirect()->route('verification3code');
+        }
+        if ($settings->otp == 1) {
+            return redirect()->route('getotp');
+        }
+        
+        return redirect()->route('previewtransfer');
     }
 
 
@@ -495,7 +500,7 @@ class WithdrawalController extends Controller
         return redirect()->route('verificationcode2');
     }
     
-    if ($settings->code1status == 3) {
+    if ($settings->code3status == 1) {
         return redirect()->route('verification3code');
     }
     

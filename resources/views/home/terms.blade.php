@@ -161,7 +161,7 @@ details of what you’ve agreed on their behalf.
 <span>
 <i class="ri-slack-line"></i>
 </span>
-<h3><a href="register">Slack</a></h3>
+<h3><a href="/register">Slack</a></h3>
 </div>
 <p></p>
 </div>
@@ -172,7 +172,7 @@ details of what you’ve agreed on their behalf.
 <span>
 <i class="ri-google-fill"></i>
 </span>
-<h3><a href="register">Google Assistant</a></h3>
+<h3><a href="/register">Google Assistant</a></h3>
 </div>
 <p></p>
 </div>
@@ -183,7 +183,7 @@ details of what you’ve agreed on their behalf.
 <span>
 <i class="ri-facebook-fill"></i>
 </span>
-<h3><a href="register">Facebook</a></h3>
+<h3><a href="/register">Facebook</a></h3>
 </div>
 <p></p>
 </div>
@@ -198,8 +198,8 @@ details of what you’ve agreed on their behalf.
 <div class="row gx-5 align-items-center">
 <div class="col-lg-6">
 <div class="app-img-wrap">
-<img src="temp/custom/assets/img/shape-4.png" alt="Image" class="app-shape-one bounce">
-<img src="temp/custom/assets/img/app-screen.png" alt="Image">
+<img src="{{ asset(\'temp/custom/assets/img/shape-4.png\') }}" alt="Image" class="app-shape-one bounce">
+<img src="{{ asset(\'temp/custom/assets/img/app-screen.png\') }}" alt="Image">
 </div>
 </div>
 <div class="col-lg-6">
@@ -212,10 +212,10 @@ You can use your mobile to perform transactions, loan requests, and credit card 
 </div>
 <h5>Over 9.2 million Downloads Worldwide</h5>
 <div class="app-btn-wrap">
-<a href="apps">
-<img src="temp/custom/assets/img/about/play-store.png" alt="Image">
+<a href="/apps">
+<img src="{{ asset(\'temp/custom/assets/img/about/play-store.png\') }}" alt="Image">
 </a><a href="/apps">
-<img src="temp/custom/assets/img/about/app-store.png" alt="Image">
+<img src="{{ asset(\'temp/custom/assets/img/about/app-store.png\') }}" alt="Image">
 </a>
 </div>
 </div>
