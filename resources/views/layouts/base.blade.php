@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
@@ -9,11 +9,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index,follow">
-  <meta name="robots" content="noindex,follow">
-  <meta name="robots" content="index,nofollow">
-  <meta name="robots" content="noindex,nofollow">
-  <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet,noodp"/>
-  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noodp"/>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,9 +18,7 @@
   <link rel="canonical" href="/">
   <meta property="og:url" content="">
   <meta property="og:site_name" content="{{$settings->site_name}}">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap%404.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/popper.js%401.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap%404.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- Bootstrap loaded locally via temp/custom/assets -->
 
 <link rel="stylesheet" href="{{ asset('temp/custom/assets/css/bootstrap.min.css') }}">
 <link rel="stylesheet" href="{{ asset('temp/custom/assets/css/flaticon.css') }}">
@@ -359,18 +352,7 @@ function googleTranslateElementInit() {
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-<!-- Smartsupp Live Chat script -->
-<script type="text/javascript">
-var _smartsupp = _smartsupp || {};
-_smartsupp.key = 'd75c20e2df776b8ffbf647bd7b7fa7cdd7fd2719';
-window.smartsupp||(function(d) {
-  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-  c.type='text/javascript';c.charset='utf-8';c.async=true;
-  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-})(document);
-</script>
-<noscript>Powered by <a href="https://www.smartsupp.com" target="_blank">Smartsupp</a></noscript>
+<!-- Chat handled by Tidio -->
 
 
   

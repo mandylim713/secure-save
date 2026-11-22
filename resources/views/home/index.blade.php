@@ -175,7 +175,7 @@
     </span>
     <h3><a href="/login">Rate Alerts</a></h3>
     </div>
-    <p>To enable our clients to convert, we at Stana Group provide the finest currency rates in the market.</p>
+    <p>To enable our clients to convert, we at {{$settings->site_name}} provide the finest currency rates in the market.</p>
     <a href="/login" class="link style1">CREATE ALERT<i class="ri-arrow-right-s-line"></i></a>
     </div>
     <div class="feature-card style3">

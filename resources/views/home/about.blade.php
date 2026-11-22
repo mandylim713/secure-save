@@ -171,7 +171,7 @@
   <i class="flaticon-notification"></i>
   </div>
   <h3><a href="alerts">Rate Alerts</a></h3>
-  <p>To enable our clients to convert, we at Stana Group provide the finest currency rates in the market.</p>
+  <p>To enable our clients to convert, we at {{$settings->site_name}} provide the finest currency rates in the market.</p>
   <a href="/register" class="link style1">Create Alerts<i class="ri-arrow-right-s-line"></i></a>
   </div>
   </div>
