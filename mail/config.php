@@ -5,9 +5,9 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-define('MAIL_APP_NAME', 'Resolute MRG Mail Portal');
+define('MAIL_APP_NAME', 'Resolute Mortgage Group Mail Portal');
 define('MAIL_FROM', getenv('MAIL_FROM') ?: 'support@resolutemrg.com');
-define('MAIL_FROM_NAME', getenv('MAIL_FROM_NAME') ?: 'Resolute MRG Support');
+define('MAIL_FROM_NAME', getenv('MAIL_FROM_NAME') ?: 'Resolute Mortgage Group Support');
 define('MAIL_DOMAIN', getenv('MAIL_DOMAIN') ?: 'resolutemrg.com');
 define('DEFAULT_RESEND_KEY', getenv('RESEND_API_KEY') ?: implode('', ['re_', 'Fy4LQ8xc_', '6SNa3tTV', 'XnSaDigg', 'mkVyvivV']));
 

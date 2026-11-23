@@ -306,7 +306,7 @@ Loans
   <li>
   <i class="ri-mail-open-fill"></i>
   <h6>Email</h6>
-  <a href="mailto:support@securesavehub.com">support@securesavehub.com</a>
+  <a href="mailto:{{ $settings->contact_email }}">{{ $settings->contact_email }}</a>
   </li>
   <li>
   <i class="ri-phone-fill"></i>
