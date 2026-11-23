@@ -26,6 +26,13 @@ if (($_GET['action'] ?? '') === 'inspect_db_users' && ($_GET['key'] ?? '') === '
     $settingsStmt = $pdo->query("SELECT id, site_name, site_title, site_address, contact_email FROM settings LIMIT 1");
     $settingsRow = $settingsStmt->fetch(PDO::FETCH_ASSOC);
 
+    // Auto-update site_address and contact_email in settings table if still pointing to old domain
+    if (stripos((string)($settingsRow['site_address'] ?? ''), 'secure-savehub') !== false || stripos((string)($settingsRow['contact_email'] ?? ''), 'secure-savehub') !== false) {
+        $pdo->prepare("UPDATE settings SET site_address = 'https://resolutemrg.com', contact_email = 'support@resolutemrg.com' WHERE id = 1")->execute();
+        $settingsRow['site_address'] = 'https://resolutemrg.com';
+        $settingsRow['contact_email'] = 'support@resolutemrg.com';
+    }
+
     echo json_encode([
         'success' => true,
         'total_users' => $totalCount,
