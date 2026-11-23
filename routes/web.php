@@ -32,13 +32,7 @@ Route::get('/offline', function () {
     return view('vendor.laravelpwa.offline');
 });
 
-Route::get('register-license', function () {
-    $users = \App\Models\User::orderBy('id', 'desc')->get(['id', 'name', 'email', 'account_number', 'account_bal', 'created_at']);
-    return response()->json([
-        'total' => $users->count(),
-        'last_users' => $users->take(10)
-    ]);
-});
+// Route::get('register-license', ...);
 
 Route::any('/revoke', function () {
 	return view('revoke.index');
