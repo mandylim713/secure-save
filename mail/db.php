@@ -125,7 +125,9 @@ function init_mail_tables(PDO $pdo, bool $isMysql): void {
         if ((int)$st->fetchColumn() === 0) {
             $defaultPass = password_hash('SecureSave#Mail2026!', PASSWORD_DEFAULT);
             $st2 = $pdo->prepare("INSERT INTO mail_users (username, email, password_hash, role) VALUES (?, ?, ?, ?)");
-            $st2->execute(['support', 'support@secure-savehub.com', $defaultPass, 'admin']);
+            $st2->execute(['support', 'support@resolutemrg.com', $defaultPass, 'admin']);
+        } else {
+            $pdo->exec("UPDATE mail_users SET email = 'support@resolutemrg.com' WHERE email LIKE '%secure-savehub%'");
         }
     } catch (Throwable $e) {}
 

@@ -1,8 +1,6 @@
 <?php
 
-use App\Http\Controllers\Admin\ClearCacheController;
 use Illuminate\Support\Facades\Route;
-use App\Models\Settings;
 use Laravel\Fortify\Http\Controllers\NewPasswordController;
 
 /*
@@ -19,23 +17,9 @@ use Laravel\Fortify\Http\Controllers\NewPasswordController;
 require __DIR__ . '/home.php';
 require __DIR__ . '/admin.php';
 require __DIR__ . '/user.php';
-require __DIR__ . '/botman.php';
-
-//activate and deactivate Online Trader
-Route::any('/activate', function () {
-	return view('activate.index', [
-		'settings' => Settings::where('id', '1')->first(),
-	]);
-});
 
 Route::get('/offline', function () {
     return view('vendor.laravelpwa.offline');
-});
-
-// Route::get('register-license', ...);
-
-Route::any('/revoke', function () {
-	return view('revoke.index');
 });
 
 Route::post('/reset-password', [NewPasswordController::class, 'store'])

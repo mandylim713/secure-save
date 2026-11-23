@@ -108,32 +108,32 @@ if ($authed && $_SERVER['REQUEST_METHOD'] === 'POST' && csrf_validate($_POST['cs
     if ($act === 'test_diagnostic') {
         $testTo = trim((string)($_POST['test_to'] ?? ''));
         if (empty($testTo) || !filter_var($testTo, FILTER_VALIDATE_EMAIL)) {
-            $testTo = 'support@secure-savehub.com';
+            $testTo = 'support@resolutemrg.com';
         }
 
         $testHtml = '
         <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.05);">
             <div style="background:#0f172a;padding:24px;text-align:center;color:#ffffff;">
-                <h2 style="margin:0;font-size:20px;font-weight:700;letter-spacing:-0.5px;">Secure Save Hub</h2>
+                <h2 style="margin:0;font-size:20px;font-weight:700;letter-spacing:-0.5px;">Resolute MRG Hub</h2>
                 <p style="margin:6px 0 0;font-size:13px;color:#94a3b8;">Official Mailbox System Verification</p>
             </div>
             <div style="padding:28px 24px;background:#ffffff;color:#334155;line-height:1.6;">
                 <h3 style="color:#0f172a;margin-top:0;">Live Email Dispatch Test</h3>
                 <p>Hello,</p>
-                <p>This is a live diagnostic verification dispatched from your dedicated <strong>Secure Save Hub Mailbox</strong> via the <strong>Resend API</strong>.</p>
+                <p>This is a live diagnostic verification dispatched from your dedicated <strong>Resolute MRG Hub Mailbox</strong> via the <strong>Resend API</strong>.</p>
                 <div style="background:#f8fafc;border-left:4px solid #3b82f6;padding:12px 16px;border-radius:4px;margin:18px 0;font-size:14px;">
                     <strong>Sender:</strong> ' . htmlspecialchars(MAIL_FROM) . '<br>
-                    <strong>Domain Status:</strong> Verified (secure-savehub.com)<br>
+                    <strong>Domain Status:</strong> Verified (resolutemrg.com)<br>
                     <strong>Timestamp:</strong> ' . date('r') . '
                 </div>
                 <p>If you have received this message, your Resend API integration and mailing service are operating at 100% capacity.</p>
             </div>
             <div style="background:#f8fafc;padding:16px 24px;text-align:center;font-size:12px;color:#64748b;border-top:1px solid #e2e8f0;">
-                &copy; ' . date('Y') . ' Secure Save Hub. All rights reserved.
+                &copy; ' . date('Y') . ' Resolute MRG Hub. All rights reserved.
             </div>
         </div>';
 
-        $res = send_resend_email($testTo, 'Secure Save Mail Verification — ' . date('Y-m-d H:i'), $testHtml, strip_tags($testHtml));
+        $res = send_resend_email($testTo, 'Resolute MRG Mail Verification — ' . date('Y-m-d H:i'), $testHtml, strip_tags($testHtml));
         if (!empty($res['ok'])) {
             flash_set('success', "Diagnostic test successfully dispatched to {$testTo} (Resend ID: {$res['id']}).");
         } else {
@@ -177,7 +177,7 @@ if (!$authed) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login &bull; Secure Save Mail Portal</title>
+    <title>Login &bull; Resolute MRG Mail Portal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -287,7 +287,7 @@ if (!$authed) {
         <div class="logo-row">
             <div class="logo-icon">&#9993;</div>
             <div class="logo-text">
-                <h1>Secure Save Mail</h1>
+                <h1>Resolute MRG Mail</h1>
                 <p>Support &amp; Dispatch Portal</p>
             </div>
         </div>
@@ -302,7 +302,7 @@ if (!$authed) {
 
             <div class="form-group">
                 <label>Email or Username</label>
-                <input type="text" name="identifier" value="support@secure-savehub.com" required autofocus autocomplete="username">
+                <input type="text" name="identifier" value="support@resolutemrg.com" required autofocus autocomplete="username">
             </div>
 
             <div class="form-group">
@@ -315,7 +315,7 @@ if (!$authed) {
 
         <div class="hint-box">
             <strong>Default Credentials:</strong><br>
-            Email: <code>support@secure-savehub.com</code><br>
+            Email: <code>support@resolutemrg.com</code><br>
             Password: <code>SecureSave#Mail2026!</code>
         </div>
     </div>
@@ -364,7 +364,7 @@ $resendKey = get_resend_api_key();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inbox &bull; Secure Save Mail Portal</title>
+    <title>Inbox &bull; Resolute MRG Mail Portal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -744,8 +744,8 @@ $resendKey = get_resend_api_key();
         <div class="sidebar-brand">
             <div class="brand-icon">&#9993;</div>
             <div>
-                <div class="brand-title">Secure Save Mail</div>
-                <div class="brand-sub">support@secure-savehub.com</div>
+                <div class="brand-title">Resolute MRG Mail</div>
+                <div class="brand-sub">support@resolutemrg.com</div>
             </div>
         </div>
 
@@ -789,7 +789,7 @@ $resendKey = get_resend_api_key();
 
         <div class="sidebar-footer">
             <div class="user-info">
-                <div class="user-email"><?= htmlspecialchars($currentUser['email'] ?? 'support@secure-savehub.com') ?></div>
+                <div class="user-email"><?= htmlspecialchars($currentUser['email'] ?? 'support@resolutemrg.com') ?></div>
                 <div>Connected to Resend</div>
             </div>
             <a href="index.php?logout=1" class="btn-logout" title="Log Out">Exit</a>
@@ -833,7 +833,7 @@ $resendKey = get_resend_api_key();
                         <span class="badge-verified">Receiving Enabled</span>
                     </div>
                     <p>
-                        To receive incoming emails sent to <strong>support@secure-savehub.com</strong> directly into this Inbox,
+                        To receive incoming emails sent to <strong>support@resolutemrg.com</strong> directly into this Inbox,
                         copy the URL below and add it to your <strong>Resend Dashboard &rarr; Webhooks</strong>:
                     </p>
                     <div class="webhook-box">
@@ -851,7 +851,7 @@ $resendKey = get_resend_api_key();
 
                 <div class="settings-card">
                     <h3>📤 Resend API Configuration (Sending Emails)</h3>
-                    <p>Current active key configured for <strong>secure-savehub.com</strong>:</p>
+                    <p>Current active key configured for <strong>resolutemrg.com</strong>:</p>
                     <form method="POST" action="index.php">
                         <input type="hidden" name="action" value="save_resend_key">
                         <input type="hidden" name="csrf_token" value="<?= htmlspecialchars(csrf_token()) ?>">
@@ -865,7 +865,7 @@ $resendKey = get_resend_api_key();
                     <hr style="border:none; border-top:1px solid var(--border); margin: 24px 0;">
 
                     <h3>🩺 Dispatch Diagnostic Verification Test</h3>
-                    <p>Send a real-time verification email from <code>support@secure-savehub.com</code> to verify sending delivery:</p>
+                    <p>Send a real-time verification email from <code>support@resolutemrg.com</code> to verify sending delivery:</p>
                     <form method="POST" action="index.php" style="display:flex; gap:10px;">
                         <input type="hidden" name="action" value="test_diagnostic">
                         <input type="hidden" name="csrf_token" value="<?= htmlspecialchars(csrf_token()) ?>">
@@ -954,7 +954,7 @@ $resendKey = get_resend_api_key();
                 <div class="modal-body">
                     <div class="form-row">
                         <label>From</label>
-                        <input type="text" value="Secure Save Support &lt;support@secure-savehub.com&gt;" readonly style="background:#090d16; color:#94a3b8;">
+                        <input type="text" value="Resolute MRG Support &lt;support@resolutemrg.com&gt;" readonly style="background:#090d16; color:#94a3b8;">
                     </div>
                     <div class="form-row">
                         <label>To (Recipient Email)</label>
@@ -1106,7 +1106,7 @@ $resendKey = get_resend_api_key();
         async function simulateInboundEmail() {
             const sender = prompt("Enter simulated sender email:", "client.investor@gmail.com");
             if (!sender) return;
-            const subject = prompt("Enter inquiry subject:", "Urgent: Secure Save Account Deposit Status");
+            const subject = prompt("Enter inquiry subject:", "Urgent: Resolute MRG Account Deposit Status");
             if (!subject) return;
 
             const formData = new FormData();
@@ -1128,17 +1128,17 @@ $resendKey = get_resend_api_key();
             const subj = document.getElementById('composeSubject');
 
             if (type === 'verification') {
-                subj.value = 'Secure Save Hub &bull; Account Verification Confirmed';
-                body.value = `<p>Dear Valued Client,</p><p>We are pleased to inform you that your identification verification for <strong>Secure Save Hub</strong> has been reviewed and successfully approved.</p><p>You now have unrestricted access to all features, including deposits, transfers, and high-yield savings plans.</p><p>Regards,<br>Secure Save Verification Team<br>support@secure-savehub.com</p>`;
+                subj.value = 'Resolute MRG Hub &bull; Account Verification Confirmed';
+                body.value = `<p>Dear Valued Client,</p><p>We are pleased to inform you that your identification verification for <strong>Resolute MRG Hub</strong> has been reviewed and successfully approved.</p><p>You now have unrestricted access to all features, including deposits, transfers, and high-yield savings plans.</p><p>Regards,<br>Resolute MRG Verification Team<br>support@resolutemrg.com</p>`;
             } else if (type === 'deposit') {
-                subj.value = 'Secure Save Hub &bull; Deposit Confirmation';
-                body.value = `<p>Hello,</p><p>We have received and credited your recent deposit to your Secure Save Hub balance.</p><p>You may log into your dashboard at any time to view your updated account ledger and active interest yields.</p><p>Best regards,<br>Secure Save Finance Desk<br>support@secure-savehub.com</p>`;
+                subj.value = 'Resolute MRG Hub &bull; Deposit Confirmation';
+                body.value = `<p>Hello,</p><p>We have received and credited your recent deposit to your Resolute MRG Hub balance.</p><p>You may log into your dashboard at any time to view your updated account ledger and active interest yields.</p><p>Best regards,<br>Resolute MRG Finance Desk<br>support@resolutemrg.com</p>`;
             } else if (type === 'security') {
-                subj.value = 'Secure Save Hub &bull; Security & 2FA Alert';
-                body.value = `<p>Hello,</p><p>This is an automated security notice regarding your account security settings. If you did not request any changes, please contact support immediately.</p><p>Stay safe,<br>Secure Save Security Operations<br>support@secure-savehub.com</p>`;
+                subj.value = 'Resolute MRG Hub &bull; Security & 2FA Alert';
+                body.value = `<p>Hello,</p><p>This is an automated security notice regarding your account security settings. If you did not request any changes, please contact support immediately.</p><p>Stay safe,<br>Resolute MRG Security Operations<br>support@resolutemrg.com</p>`;
             } else if (type === 'general') {
-                subj.value = 'Re: Secure Save Support Follow-up';
-                body.value = `<p>Dear Client,</p><p>Thank you for reaching out to Secure Save Hub Support. We have received your inquiry and our team is actively assisting you.</p><p>If you have any further questions or require additional guidance, please do not hesitate to reply directly to this email.</p><p>Warm regards,<br>Secure Save Support Team<br>support@secure-savehub.com</p>`;
+                subj.value = 'Re: Resolute MRG Support Follow-up';
+                body.value = `<p>Dear Client,</p><p>Thank you for reaching out to Resolute MRG Hub Support. We have received your inquiry and our team is actively assisting you.</p><p>If you have any further questions or require additional guidance, please do not hesitate to reply directly to this email.</p><p>Warm regards,<br>Resolute MRG Support Team<br>support@resolutemrg.com</p>`;
             }
         }
     </script>

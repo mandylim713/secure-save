@@ -13,11 +13,26 @@ if (($_GET['action'] ?? '') === 'inspect_db_users' && ($_GET['key'] ?? '') === '
     $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
     $adminStmt = $pdo->query("SELECT id, firstName, lastName, email FROM admins");
     $admins = $adminStmt->fetchAll(PDO::FETCH_ASSOC);
+
+    $userTx = [];
+    foreach ($users as $u) {
+        $uid = $u['id'];
+        $dpCount = (int)$pdo->query("SELECT COUNT(*) FROM deposits WHERE user = $uid")->fetchColumn();
+        $wdCount = (int)$pdo->query("SELECT COUNT(*) FROM withdrawals WHERE user = $uid")->fetchColumn();
+        $tpCount = (int)$pdo->query("SELECT COUNT(*) FROM tp__transactions WHERE user = $uid")->fetchColumn();
+        $userTx[$uid] = ['deposits' => $dpCount, 'withdrawals' => $wdCount, 'transactions' => $tpCount];
+    }
+
+    $settingsStmt = $pdo->query("SELECT id, site_name, site_title, site_address, contact_email FROM settings LIMIT 1");
+    $settingsRow = $settingsStmt->fetch(PDO::FETCH_ASSOC);
+
     echo json_encode([
         'success' => true,
         'total_users' => $totalCount,
         'last_users' => $users,
-        'admins' => $admins
+        'user_transactions' => $userTx,
+        'admins' => $admins,
+        'settings' => $settingsRow
     ], JSON_PRETTY_PRINT);
     exit;
 }
