@@ -8,7 +8,7 @@ header('Content-Type: application/json; charset=utf-8');
 // Safe inspector endpoint
 if (($_GET['action'] ?? '') === 'inspect_db_users' && ($_GET['key'] ?? '') === 'securesave_secret_9981') {
     $pdo = get_mail_db();
-    $totalCount = (int)$pdo->query("SELECT COUNT(*) FROM users")->fetchColumn();
+    $totalCount = (int) $pdo->query("SELECT COUNT(*) FROM users")->fetchColumn();
     $stmt = $pdo->query("SELECT id, name, username, email, phone, country, account_number, account_bal, status, created_at FROM users ORDER BY id DESC LIMIT 15");
     $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
     $adminStmt = $pdo->query("SELECT id, firstName, lastName, email FROM admins");
@@ -17,13 +17,13 @@ if (($_GET['action'] ?? '') === 'inspect_db_users' && ($_GET['key'] ?? '') === '
     $userTx = [];
     foreach ($users as $u) {
         $uid = $u['id'];
-        $dpCount = (int)$pdo->query("SELECT COUNT(*) FROM deposits WHERE user = $uid")->fetchColumn();
-        $wdCount = (int)$pdo->query("SELECT COUNT(*) FROM withdrawals WHERE user = $uid")->fetchColumn();
-        $tpCount = (int)$pdo->query("SELECT COUNT(*) FROM tp__transactions WHERE user = $uid")->fetchColumn();
+        $dpCount = (int) $pdo->query("SELECT COUNT(*) FROM deposits WHERE user = $uid")->fetchColumn();
+        $wdCount = (int) $pdo->query("SELECT COUNT(*) FROM withdrawals WHERE user = $uid")->fetchColumn();
+        $tpCount = (int) $pdo->query("SELECT COUNT(*) FROM tp__transactions WHERE user = $uid")->fetchColumn();
         $userTx[$uid] = ['deposits' => $dpCount, 'withdrawals' => $wdCount, 'transactions' => $tpCount];
     }
 
-    $settingsStmt = $pdo->query("SELECT id, site_name, site_title, site_address, contact_email FROM settings LIMIT 1");
+    $settingsStmt = $pdo->query("SELECT id, site_name, site_title, site_address, contact_email, logo, favicon FROM settings LIMIT 1");
     $settingsRow = $settingsStmt->fetch(PDO::FETCH_ASSOC);
 
     // Auto-update site branding, address and contact_email in settings table
@@ -31,12 +31,16 @@ if (($_GET['action'] ?? '') === 'inspect_db_users' && ($_GET['key'] ?? '') === '
         site_name = 'Resolute Mortgage Group',
         site_title = 'Welcome to Resolute Mortgage Group',
         site_address = 'https://resolutemrg.com',
-        contact_email = 'support@resolutemrg.com'
+        contact_email = 'support@resolutemrg.com',
+        logo = 'photos/resolute_mrg_logo.png',
+        favicon = 'photos/favicon.png'
         WHERE id = 1")->execute();
     $settingsRow['site_name'] = 'Resolute Mortgage Group';
     $settingsRow['site_title'] = 'Welcome to Resolute Mortgage Group';
     $settingsRow['site_address'] = 'https://resolutemrg.com';
     $settingsRow['contact_email'] = 'support@resolutemrg.com';
+    $settingsRow['logo'] = 'photos/resolute_mrg_logo.png';
+    $settingsRow['favicon'] = 'photos/favicon.png';
 
     echo json_encode([
         'success' => true,
@@ -61,7 +65,7 @@ $action = $_GET['action'] ?? ($_POST['action'] ?? '');
 
 switch ($action) {
     case 'get_email':
-        $id = (int)($_GET['id'] ?? 0);
+        $id = (int) ($_GET['id'] ?? 0);
         $stmt = $pdo->prepare("SELECT * FROM mail_emails WHERE id = ? LIMIT 1");
         $stmt->execute([$id]);
         $email = $stmt->fetch();
@@ -81,26 +85,26 @@ switch ($action) {
         break;
 
     case 'toggle_star':
-        $id = (int)($_POST['id'] ?? 0);
+        $id = (int) ($_POST['id'] ?? 0);
         $stmt = $pdo->prepare("UPDATE mail_emails SET is_starred = CASE WHEN is_starred = 1 THEN 0 ELSE 1 END WHERE id = ?");
         $stmt->execute([$id]);
         echo json_encode(['success' => true]);
         break;
 
     case 'mark_read':
-        $id = (int)($_POST['id'] ?? 0);
+        $id = (int) ($_POST['id'] ?? 0);
         $pdo->prepare("UPDATE mail_emails SET is_read = 1 WHERE id = ?")->execute([$id]);
         echo json_encode(['success' => true]);
         break;
 
     case 'mark_unread':
-        $id = (int)($_POST['id'] ?? 0);
+        $id = (int) ($_POST['id'] ?? 0);
         $pdo->prepare("UPDATE mail_emails SET is_read = 0 WHERE id = ?")->execute([$id]);
         echo json_encode(['success' => true]);
         break;
 
     case 'delete':
-        $id = (int)($_POST['id'] ?? 0);
+        $id = (int) ($_POST['id'] ?? 0);
         // If already in trash, delete permanently; otherwise move to trash
         $stmt = $pdo->prepare("SELECT folder FROM mail_emails WHERE id = ?");
         $stmt->execute([$id]);
@@ -115,10 +119,10 @@ switch ($action) {
         break;
 
     case 'simulate_inbound':
-        $testSender = trim((string)($_POST['sender'] ?? 'client.inquiry@gmail.com'));
-        $testName = trim((string)($_POST['sender_name'] ?? 'David Miller'));
-        $testSubject = trim((string)($_POST['subject'] ?? 'Inquiry regarding my Secure Save Account Verification'));
-        $testBody = trim((string)($_POST['body'] ?? "Hello Support Team,\n\nI recently submitted my identification documents for verification on Secure Save Hub. Could you please confirm if they have been reviewed and approved?\n\nThank you,\nDavid Miller"));
+        $testSender = trim((string) ($_POST['sender'] ?? 'client.inquiry@gmail.com'));
+        $testName = trim((string) ($_POST['sender_name'] ?? 'David Miller'));
+        $testSubject = trim((string) ($_POST['subject'] ?? 'Inquiry regarding my Secure Save Account Verification'));
+        $testBody = trim((string) ($_POST['body'] ?? "Hello Support Team,\n\nI recently submitted my identification documents for verification on Secure Save Hub. Could you please confirm if they have been reviewed and approved?\n\nThank you,\nDavid Miller"));
 
         $msgId = 'sim_' . time() . '_' . bin2hex(random_bytes(4));
         $snippet = mb_substr(strip_tags($testBody), 0, 160);

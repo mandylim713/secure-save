@@ -60,9 +60,9 @@
 <div class="container">
     
 <nav class="navbar navbar-expand-md navbar-light" style="">
-<a class="navbar-brand" href="/">
-<img class="logo-light" src="{{ asset('storage/app/public/'.$settings->logo)}}" alt="{{ $settings->site_name }}  " width="200" height="260">
-<img class="logo-dark" src="{{ asset('storage/app/public/'.$settings->logo)}}" alt="{{ $settings->site_name }}" width="200" height="260">
+<a class="navbar-brand d-flex align-items-center" href="/">
+<img class="logo-light" src="{{ asset('storage/app/public/'.$settings->logo)}}" alt="{{ $settings->site_name }}" style="max-height: 48px; width: auto;">
+<img class="logo-dark" src="{{ asset('storage/app/public/'.$settings->logo)}}" alt="{{ $settings->site_name }}" style="max-height: 48px; width: auto;">
 </a>
 
 
