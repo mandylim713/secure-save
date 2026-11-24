@@ -245,8 +245,8 @@ Loans
   </a>
   </li>
   <li>
-  <a href="/apps" target="_blank">
-  Download App
+  <a href="/contact" target="_blank">
+  Customer Support
   </a>
   </li>
   <li>
@@ -311,7 +311,7 @@ Loans
   <li>
   <i class="ri-phone-fill"></i>
   <h6>Phone</h6>
-  <a href="{{ $settings->whatsapp }}">VIP ONLY</a>
+  <a href="tel:+18005550199">+1 (800) 555-0199</a>
   </li>
   </ul>
   </div>

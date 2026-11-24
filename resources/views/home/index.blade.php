@@ -163,20 +163,20 @@
     <span>
     <i class="flaticon-pie-chart"></i>
     </span>
-    <h3><a href="/login">Curreny Charts</a></h3>
+    <h3><a href="/loans">Rate Calculators</a></h3>
     </div>
-    <p>You can always watch the market's movement and make trading decisions with our currency charts.</p>
-    <a href="/login" class="link style1">VIEW CHART<i class="ri-arrow-right-s-line"></i></a>
+    <p>Estimate monthly payments, compare loan programs, and evaluate financing options with our digital calculators.</p>
+    <a href="/loans" class="link style1">CALCULATE RATES<i class="ri-arrow-right-s-line"></i></a>
     </div>
     <div class="feature-card style3">
     <div class="feature-title">
     <span>
     <i class="flaticon-notification"></i>
     </span>
-    <h3><a href="/login">Rate Alerts</a></h3>
+    <h3><a href="/loans">Competitive Rates</a></h3>
     </div>
-    <p>To enable our clients to convert, we at {{$settings->site_name}} provide the finest currency rates in the market.</p>
-    <a href="/login" class="link style1">CREATE ALERT<i class="ri-arrow-right-s-line"></i></a>
+    <p>At {{$settings->site_name}}, we provide competitive fixed and variable mortgage rates tailored to your financing needs.</p>
+    <a href="/loans" class="link style1">VIEW RATES<i class="ri-arrow-right-s-line"></i></a>
     </div>
     <div class="feature-card style3">
     <div class="feature-title">

@@ -47,89 +47,24 @@ class HomePageController extends Controller
     }
 
 
-public function investment(){
-        $settings=Settings::where('id', '=', '1')->first();
-        //sum total deposited
-        $total_deposits = Deposit::where('status','processed')->sum('amount');
-        
-        
-        
-        //sum total withdrawals
-        $total_withdrawals = Withdrawal::where('status','processed')->sum('amount');
-        
-        
-        
-      
-        return view('home.pricing')->with(array(
-            'settings' => $settings,
-            'total_users' => User::count(),
-            'plans' => Plans::all(),
-            'total_deposits' => $total_deposits,
-            'total_withdrawals' => $total_withdrawals,
-            'faqs'=> Faq::orderby('id', 'desc')->get(),
-            'test'=> Testimony::orderby('id', 'desc')->get(),
-            'withdrawals' => Withdrawal::orderby('id','DESC')->take(7)->get(),
-            'deposits' => Deposit::orderby('id','DESC')->take(7)->get(),
-            'title' => $settings->site_title,
-            'mplans' => Plans::where('type','Main')->get(),
-            'pplans' => Plans::where('type','Promo')->get(),
-        ));
+    public function investment(){
+        return redirect()->route('loans');
     }
 
-
-public function statistics(){
-        $settings=Settings::where('id', '=', '1')->first();
-        //sum total deposited
-        $total_deposits = Deposit::where('status','processed')->sum('amount');
-        
-        
-        
-        //sum total withdrawals
-        $total_withdrawals = Withdrawal::where('status','processed')->sum('amount');
-        
-        
-        
-      
-        return view('home.statistics')->with(array(
-            'settings' => $settings,
-            'total_users' => User::count(),
-            'plans' => Plans::all(),
-            'total_deposits' => $total_deposits,
-            'total_withdrawals' => $total_withdrawals,
-            'faqs'=> Faq::orderby('id', 'desc')->get(),
-            'test'=> Testimony::orderby('id', 'desc')->get(),
-            'withdrawals' => Withdrawal::orderby('id','DESC')->take(7)->get(),
-            'deposits' => Deposit::orderby('id','DESC')->take(7)->get(),
-            'title' => $settings->site_title,
-            'mplans' => Plans::where('type','Main')->get(),
-            'pplans' => Plans::where('type','Promo')->get(),
-        ));
+    public function statistics(){
+        return redirect()->route('home');
     }
 
-
-
-    //Licensing and registration route
     public function licensing(){
-        
-        return view('home.licensing')
-        ->with(array(
-            'mplans' => Plans::where('type','Main')->get(),
-            'pplans' => Plans::where('type','Promo')->get(),
-            'title' => 'Licensing, regulation and registration',
-            'settings' => Settings::where('id', '=', '1')->first(),
-        ));
+        return redirect()->route('about');
     }
-//tradebots
-public function tradebots(){
-        
-    return view('home.tradebots');
-    
-}
-    ////margin
+
+    public function tradebots(){
+        return redirect()->route('home');
+    }
+
     public function margin(){
-        
-        return view('home.margin');
-        
+        return redirect()->route('loans');
     }
 //careers
 public function business(){
@@ -172,14 +107,9 @@ public function loans(){
     
 }
 
-public function app(){
-       
-    return view('home.app',)->with(array(
-        'title' => 'app',
-        'settings' => Settings::where('id', '=', '1')->first(),
-));
-    
-}
+    public function app(){
+        return redirect()->route('home');
+    }
 
 
     //Terms of service route

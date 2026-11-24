@@ -160,9 +160,9 @@
   <div class="feature-icon">
   <i class="flaticon-pie-chart"></i>
   </div>
-  <h3><a href="chart">Curreny Charts</a></h3>
-  <p>You can always watch the market's movement and make trading decisions with our currency charts.</p>
-  <a href="/login" class="link style1">View Charts<i class="ri-arrow-right-s-line"></i></a>
+  <h3><a href="/loans">Rate Calculators</a></h3>
+  <p>Estimate monthly payments, compare loan programs, and evaluate financing options with our digital calculators.</p>
+  <a href="/loans" class="link style1">Calculate Rates<i class="ri-arrow-right-s-line"></i></a>
   </div>
    </div>
   <div class=" col-xxl-3 col-xl-4 col-lg-6 col-md-6">
@@ -170,9 +170,9 @@
   <div class="feature-icon">
   <i class="flaticon-notification"></i>
   </div>
-  <h3><a href="alerts">Rate Alerts</a></h3>
-  <p>To enable our clients to convert, we at {{$settings->site_name}} provide the finest currency rates in the market.</p>
-  <a href="/register" class="link style1">Create Alerts<i class="ri-arrow-right-s-line"></i></a>
+  <h3><a href="/loans">Competitive Rates</a></h3>
+  <p>To enable our clients to achieve their homeownership goals, {{$settings->site_name}} provides competitive lending rates.</p>
+  <a href="/loans" class="link style1">View Rates<i class="ri-arrow-right-s-line"></i></a>
   </div>
   </div>
   <div class=" col-xxl-3 col-xl-4 col-lg-6 col-md-6">
